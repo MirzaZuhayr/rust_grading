@@ -12,12 +12,15 @@ fn main() {
         Ok(num) => num,
         Err(_) => 0,
     };
-    if grade >= 90 {
-        println!("Your grade is an A");
+    if grade >=100 {
+        println!("Invalid Grade")
+    }
+    else if grade >= 90 {
+        println!("Grade is an A");
     } else if grade >= 80 {
-        println!("Your grade is a B");
+        println!("Grade is a B");
     } else if grade >= 70 {
-        println!("Your grade is a C");
+        println!("Grade is a C");
     } else if grade >= 60 { 
         println!("Grade is D");
     } else {
